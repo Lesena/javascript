@@ -1,0 +1,57 @@
+<div class="row">
+     <div class="col-md-4">
+	     <h3 style="margin-left: -42px;">1.Вопрос №1</h3>
+		    
+			<div class="checkbox">
+ <label>
+  <input type="checkbox" value="check1">
+  Вариант ответа №1
+  </label>
+  <label>
+  <input type="checkbox" value="check2">
+ Вариант ответа №2
+ </label>
+ <label>
+  <input type="checkbox" value="check3">
+  Вариант ответа №3
+ </label>
+</div>
+	 </div>
+   </div>
+<div class="row" style="padding-left: 130px; margin-bottom: 15px;"">
+     <div class="col-md-4">
+	     <h3 style="margin-left: -42px;">2.Вопрос №2</h3>
+		    <div class="checkbox">
+ <label>
+  <input type="checkbox" value="check1">
+  Вариант ответа №1
+  </label>
+  <label>
+  <input type="checkbox" value="check2">
+ Вариант ответа №2
+ </label>
+ <label>
+  <input type="checkbox" value="check3">
+  Вариант ответа №3
+ </label>
+</div>
+	 </div>
+	 </div>
+	 <div class="row" style="padding-left: 130px; margin-bottom: 15px;"">
+     <div class="col-md-4">
+	    <h3 style="margin-left: -42px;">3.Вопрос №3</h3>
+		   <div class="checkbox">
+ <label>
+  <input type="checkbox" value="check1">
+  Вариант ответа №1
+  </label>
+  <label>
+  <input type="checkbox" value="check2">
+ Вариант ответа №2
+ </label>
+ <label>
+  <input type="checkbox" value="check3">
+  Вариант ответа №3
+ </label>
+</div>
+	 </div>

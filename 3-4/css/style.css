@@ -1,0 +1,52 @@
+* {
+  font: 19px Arial,sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+div {
+    display: block;
+
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+}
+h3{
+font: 14px Arial,sans-serif;
+}
+legend {
+  padding-top: 11px;
+  padding-bottom: 15px;
+}
+label {
+  font-size: 16px;
+  display: block;
+  width: 500px;
+ 
+}
+input[type='checkbox'] {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
+  vertical-align: top;
+  background-color: #c9e4f9;
+  border:2px solid black;
+}
+
+button {
+  display: block;
+
+  width: 330px;
+  height: 52px;
+  margin: 50px auto;
+
+  cursor: pointer;
+
+  border: 2px solid #000;
+  background-color: #cfe2f3;
+}

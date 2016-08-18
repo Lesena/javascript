@@ -1,0 +1,45 @@
+//создаём элемент (узел) li
+var elementLI = document.createElement("li");
+//создаём текстовый узел, содержащий текст "Смартфон"
+var textSmart= document.createTextNode("Cмapтфoн");
+//добавляем созданный текстовый узел как последний дочерний элемент к только что созданному элементу LI
+elementLI.appendChild(textSmart);
+//получаем элемент, к которому будет добавлен созданный узел li как дочерний
+var elementUL = document.getElementById("list");
+//добавляем созданный элемент li как последний дочерний элемент к UL с id="list"
+elementUL.appendChild(elementLI);
+//получаем элемент UL, содержащий список, по его id
+var elementUL = document.getElementById("list");
+//получить элемент li, содержащий текстовый узел "Планшет"
+var elementLI = elementUL.childNodes[2];
+//добавляем элемент в начало списка
+//при этом он будет удалён из исходного места
+elementUL.insertBefore(elementLI,elementUL.firstChild);
+//найти узел, который мы хотим удалить
+var findElement = document.getElementById("notebook");
+//вызвать у родительского узла метод removeChild
+//и передать ему в качестве параметра найденный узел
+findElement.parentNode.removeChild(findElement);
+//получить элемент, имеющий id="myID"
+var myID = document.getElementById("myID");
+//получить последний дочерний узел у элемента myID
+var lastNode = myID.lastChild;
+//т.к. мы не знаем, является ли последний дочерний узел элемента элементом,
+//то воспользуемся циклом while для поиска последнего дочернего элемента у элемента myID 
+//пока у элемента есть узел и его тип не равен 1 (т.е. он не элемент) выполнять
+while(lastNode && lastNode.nodeType!=1) {
+  //перейти к предыдущему узлу
+  lastNode = lastNode.previousSibling;
+}
+//если у узла myID мы нашли элемент
+if (lastNode) {
+  //то его необходимо удалить
+  lastNode.parentNode.removeChild(lastNode);
+}
+//получить элемент, у которого мы хотим удалить все его дочерние узлы
+var elementQuestion = document.getElementById("myQuestion");
+//пока есть первый элемент
+while (elementQuestion.firstElement) {
+  //удалить его
+  elementQuestion.removeChild(element.firstChild);
+}
