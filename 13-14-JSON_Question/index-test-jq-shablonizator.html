@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>TEST</title>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/script.js"></script>	
+		<link href="css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+  <div class="test__container">
+    <h1 class="test__header">Programming test</h1>
+    <div class="questions__block">
+
+    <script type="text/html" id="test">
+
+      <% for (var i = 0; i < data.length; i++) { %>
+  
+        <h2>  <%= data[i].question %>   </h2>
+
+        <input type="checkbox"> <%= data[i].answers[0] %>  
+        <input type="checkbox"> <%= data[i].answers[1] %>  
+        <input type="checkbox"> <%= data[i].answers[2] %>  
+
+      <% }; %>
+
+    </script>
+	<!--шаблон для модального окна
+<script type="text/template" id="modal-result">
+  <div class="overlay">
+    <div class="modal">
+      <% if (error) { %>
+      <h4><%=errorMsg%></h4>
+      <button class="errorOK">OK</button>
+      <% } else { %>
+      <h4><%=msg%></h4>
+      <p>Правильных ответов:
+        <span><%=correct%></span> из
+        <span><%=answersLength%></span>
+      </p>
+      <p>Не правильных ответов: <span><%=incorrect%></span></p>
+      <button class="start-modal">Пройти тест еще раз</button>
+      <button class="show-results">Посмотреть результаты</button>
+      <% } %>
+    </div>
+  </div>
+</script>-->
+    </div>
+
+    <a href="#" class="test__button">Review my results</a>
+  </div>
+
+
+</body>
+</html>
