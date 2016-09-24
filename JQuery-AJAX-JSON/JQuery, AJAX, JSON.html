@@ -1,0 +1,26 @@
+//Нужно так: нажимаешь на div с id "mydiv" и в этом же div'e очищение и сразу вывод информации из JSON
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My jQuery</title>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function()
+      {
+        $('#mydiv').click(function()
+        {
+          $.getJSON('data.json', {}, function(json)
+          {
+            $('#mydiv').html('');
+            $('#mydiv').append('lastName: ' + json.myInfo.lastName + '<br/>')
+                       .append('firstName: ' + json.myInfo.firstName + '<br/>');
+          });
+        })
+      })
+    </script>
+    <div class="example cursor" id="mydiv">Нажми на меня!</div>
+  </body>
+</html>
