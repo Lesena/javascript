@@ -1,0 +1,9 @@
+{
+  myInfo:
+  {
+    lastName: 'Tertyshnyi',
+    firstName: 'Nazar',
+    age: 19,
+    language: 'php, python'
+  }
+}
